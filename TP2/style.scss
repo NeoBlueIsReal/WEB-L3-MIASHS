@@ -1,0 +1,29 @@
+article:hover{
+    box-shadow: 0 0 11px black;
+}
+
+article footer{
+    color: white;
+    background-color: black;
+}
+
+article{
+    padding: 0em !important;
+}
+
+head{
+    background-color: gray;
+}
+
+
+body::after{
+    content: "";
+    background-image: url("img/board.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
