@@ -1,5 +1,11 @@
-article:hover{
+.card:hover{
     box-shadow: 0 0 11px black;
+    transition: 300ms;
+}
+
+.card{
+    animation-duration: 1s;
+    animation-name: carte;
 }
 
 article footer{
@@ -11,11 +17,6 @@ article{
     padding: 0em !important;
 }
 
-head{
-    background-color: gray;
-}
-
-
 body::after{
     content: "";
     background-image: url("img/board.jpg");
@@ -24,6 +25,16 @@ body::after{
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     z-index: -1;
+}
+
+@keyframes carte {
+    from {
+        right: 100%;
+      }
+    
+      to {
+          right: 0%;
+      }
 }
