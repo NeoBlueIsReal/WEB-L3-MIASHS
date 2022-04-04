@@ -1,0 +1,28 @@
+.card:hover {
+  box-shadow: 0 0 11px black;
+  transition: 300ms;
+}
+
+.card {
+  color: white;
+  background-color: #404040;
+}
+
+article footer {
+  color: white;
+  background-color: black;
+}
+
+body::after {
+  content: "";
+  background-image: url("img/board.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
